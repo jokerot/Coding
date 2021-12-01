@@ -9,35 +9,43 @@ function readMyFile($fname)
 
 function myTestOne()
 {
-    $val = "1-3 a: abcde
-    1-3 b: cdefg
-    2-9 c: ccccccccc";
 
     $values = readMyFile('text.text');
-  
-    $correct = [];
+    $correct = 0;
 
-    foreach ($values as $line ) {
+    foreach ($values as $line) {
         $separated = explode(' ', $line);
         $minmax = explode('-', $separated[0]);
-        $min = $minmax[0];
-        $max = $minmax[1];
-        echo $max;
+        $min = (int) $minmax[0];
+        $max = (int) $minmax[1];
+        $letter = $separated[1][0];
+        $countletters = substr_count($separated[2], $letter);
+     
+        if ( ($min <= $countletters) and ($countletters <= $max) ) {
+            $correct++;
+        }
     }
 
-
-    return 0;
+    return $correct;
 }
 function myTestTwo()
 {
     $values = readMyFile('text.text');
+    $correct = 0;
 
-    for ($i = 0; $i < count($values); $i++)
-        for ($j = $i; $j < count($values); $j++)
-            for ($k = $j; $k < count($values); $k++)
-                if ($values[$i] + $values[$j] + $values[$k] === 2020) return $values[$i] * $values[$j] * $values[$k] ;
+    foreach ($values as $line) {
+        $separated = explode(' ', $line);
+        $minmax = explode('-', $separated[0]);
+        $first = (int) $minmax[0];
+        $second = (int) $minmax[1];
+        $letter = $separated[1][0];
 
-    return 0;
+        if ( ($separated[2][$first-1] === $letter) xor ($separated[2][$second-1] === $letter) ) {
+            $correct++;
+        }
+    }
+
+    return $correct;
 }
 
 
@@ -49,9 +57,9 @@ $end = (float) array_sum(explode(' ', microtime()));
 echo PHP_EOL . "Test One COMPLETED in:" . sprintf("%.4f", ($end - $start)) . " seconds." . PHP_EOL;
 
 
-// $start = (float) array_sum(explode(' ', microtime()));
+$start = (float) array_sum(explode(' ', microtime()));
 
-// echo myTestTwo();
+echo myTestTwo();
 
-// $end = (float) array_sum(explode(' ', microtime()));
-// echo PHP_EOL . "Test Two COMPLETED in:" . sprintf("%.4f", ($end - $start)) . " seconds.";
+$end = (float) array_sum(explode(' ', microtime()));
+echo PHP_EOL . "Test Two COMPLETED in:" . sprintf("%.4f", ($end - $start)) . " seconds.";
