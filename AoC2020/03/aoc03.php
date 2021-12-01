@@ -16,15 +16,7 @@ function myTestOne()
     $treeHits = 0;
 
     foreach ($array as $line) {
-        echo "---------------------" . PHP_EOL;
-        echo $line . PHP_EOL;
-        echo 'slop dist' . $slopeDistance . PHP_EOL;
-        echo 'divider' . $divider . PHP_EOL;
-        echo $slopeDistance % $divider . PHP_EOL;
-        echo $treeHits . PHP_EOL;
-
         if ($line[$slopeDistance % $divider] === "#") {
-            echo "HIT" . PHP_EOL;
             $treeHits++;
         }
         $slopeDistance += $step;
@@ -46,23 +38,21 @@ function myTestTwo()
             }
             $slopeDistance += $step;
         }
-        echo 'HITS= ' . $treeHits . PHP_EOL;
-        echo 'Product befor multiply= ' . $product . PHP_EOL;
+
         $product *= $treeHits;
     }
 
     $slopeDistance = 0;
     $treeHits = 0;
-    for ($i = 0; $i < count($array); $i+=2) {
+    for ($i = 0; $i < count($array); $i += 2) {
         if ($array[$i][$slopeDistance % $divider] === "#") {
             $treeHits++;
         }
         $slopeDistance++;
     }
-    echo 'HITS= ' . $treeHits . PHP_EOL;
-    echo 'Product befor multiply= ' . $product . PHP_EOL;
+
     $product *= $treeHits;
-    
+
 
     return $product;
 }
