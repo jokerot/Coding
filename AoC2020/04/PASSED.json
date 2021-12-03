@@ -1,0 +1,986 @@
+PASSED
+
+array(7) { ["byr"]=> string(4) "1932" ["ecl"]=> string(3) "hzl" ["pid"]=> string(9) "284313291" ["iyr"]=> string(4) "2017" ["hcl"]=> string(7) "#efcc98" ["eyr"]=> string(4) "2024" ["hgt"]=> string(5) "184cm" }
+
+
+current count= 1 failed field
+
+PASSED
+
+array(7) { ["eyr"]=> string(4) "2027" ["hgt"]=> string(5) "185cm" ["hcl"]=> string(7) "#373b34" ["pid"]=> string(9) "807766874" ["iyr"]=> string(4) "2015" ["byr"]=> string(4) "1955" ["ecl"]=> string(3) "hzl" }
+
+
+current count= 2
+
+PASSED
+
+array(7) { ["iyr"]=> string(4) "2017" ["hcl"]=> string(7) "#7d3b0c" ["hgt"]=> string(5) "174cm" ["byr"]=> string(4) "1942" ["eyr"]=> string(4) "2025" ["ecl"]=> string(3) "blu" ["pid"]=> string(9) "424955675" }
+
+
+current count= 3
+
+PASSED
+
+array(7) { ["eyr"]=> string(4) "2026" ["byr"]=> string(4) "1950" ["hcl"]=> string(7) "#ceb3a1" ["hgt"]=> string(5) "182cm" ["iyr"]=> string(4) "2016" ["pid"]=> string(9) "440353084" ["ecl"]=> string(3) "amb" }
+
+
+current count= 4 failed byr
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#ceb3a1" ["eyr"]=> string(4) "2020" ["pid"]=> string(9) "348696077" ["hgt"]=> string(5) "163cm" ["ecl"]=> string(3) "hzl" ["byr"]=> string(4) "1921" ["iyr"]=> string(4) "2016" }
+
+
+current count= 5 failed eyr
+
+PASSED
+
+array(8) { ["hcl"]=> string(7) "#341e13" ["byr"]=> string(4) "1921" ["iyr"]=> string(4) "2020" ["pid"]=> string(9) "072379782" ["eyr"]=> string(4) "2022" ["hgt"]=> string(5) "166cm" ["cid"]=> string(3) "253" ["ecl"]=> string(3) "brn" }
+
+
+current count= 6
+
+PASSED
+
+array(7) { ["ecl"]=> string(3) "blu" ["hgt"]=> string(4) "75in" ["byr"]=> string(4) "1954" ["eyr"]=> string(4) "2026" ["iyr"]=> string(4) "2012" ["hcl"]=> string(7) "#623a2f" ["pid"]=> string(9) "328598886" }
+
+
+current count= 7 failed byr failed byr failed iyr failed ecl
+
+PASSED
+
+array(7) { ["byr"]=> string(4) "1931" ["pid"]=> string(9) "488791624" ["hgt"]=> string(5) "169cm" ["ecl"]=> string(3) "blu" ["eyr"]=> string(4) "2029" ["hcl"]=> string(7) "#fffffd" ["iyr"]=> string(4) "2013" }
+
+
+current count= 8
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#733820" ["hgt"]=> string(4) "76in" ["pid"]=> string(9) "517689823" ["eyr"]=> string(4) "2028" ["byr"]=> string(4) "1988" ["ecl"]=> string(3) "brn" ["iyr"]=> string(4) "2016" }
+
+
+current count= 9
+
+PASSED
+
+array(7) { ["eyr"]=> string(4) "2023" ["hcl"]=> string(7) "#fffffd" ["hgt"]=> string(5) "190cm" ["iyr"]=> string(4) "2015" ["ecl"]=> string(3) "brn" ["pid"]=> string(9) "739536900" ["byr"]=> string(4) "1951" }
+
+
+current count= 10
+
+PASSED
+
+array(8) { ["ecl"]=> string(3) "brn" ["byr"]=> string(4) "1986" ["cid"]=> string(3) "262" ["hcl"]=> string(7) "#efcc98" ["pid"]=> string(9) "880203213" ["hgt"]=> string(5) "185cm" ["iyr"]=> string(4) "2018" ["eyr"]=> string(4) "2029" }
+
+
+current count= 11 failed byr
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#ceb3a1" ["iyr"]=> string(4) "2020" ["byr"]=> string(4) "1977" ["hgt"]=> string(5) "192cm" ["pid"]=> string(9) "338237458" ["eyr"]=> string(4) "2030" ["ecl"]=> string(3) "amb" }
+
+
+current count= 12 failed byr failed byr failed field failed eyr failed byr failed field failed hcl
+
+PASSED
+
+array(7) { ["pid"]=> string(9) "163252726" ["eyr"]=> string(4) "2026" ["hgt"]=> string(5) "163cm" ["iyr"]=> string(4) "2011" ["hcl"]=> string(7) "#efcc98" ["ecl"]=> string(3) "hzl" ["byr"]=> string(4) "1936" }
+
+
+current count= 13
+
+PASSED
+
+array(8) { ["hgt"]=> string(5) "157cm" ["iyr"]=> string(4) "2019" ["pid"]=> string(9) "078770050" ["hcl"]=> string(7) "#efcc98" ["byr"]=> string(4) "1967" ["eyr"]=> string(4) "2030" ["ecl"]=> string(3) "gry" ["cid"]=> string(3) "190" }
+
+
+current count= 14
+
+PASSED
+
+array(8) { ["hgt"]=> string(5) "184cm" ["ecl"]=> string(3) "amb" ["pid"]=> string(9) "851379559" ["hcl"]=> string(7) "#ceb3a1" ["byr"]=> string(4) "1946" ["eyr"]=> string(4) "2022" ["iyr"]=> string(4) "2017" ["cid"]=> string(3) "280" }
+
+
+current count= 15 failed iyr failed byr failed field
+
+PASSED
+
+array(7) { ["hgt"]=> string(4) "72in" ["ecl"]=> string(3) "brn" ["byr"]=> string(4) "1956" ["pid"]=> string(9) "253685193" ["iyr"]=> string(4) "2017" ["eyr"]=> string(4) "2023" ["hcl"]=> string(7) "#6b5442" }
+
+
+current count= 16 failed eyr
+
+PASSED
+
+array(8) { ["eyr"]=> string(4) "2026" ["iyr"]=> string(4) "2020" ["cid"]=> string(3) "226" ["pid"]=> string(9) "882830512" ["hcl"]=> string(7) "#866857" ["byr"]=> string(4) "1929" ["ecl"]=> string(3) "amb" ["hgt"]=> string(4) "60in" }
+
+
+current count= 17 failed in failed field
+
+PASSED
+
+array(7) { ["eyr"]=> string(4) "2020" ["pid"]=> string(9) "718422803" ["hcl"]=> string(7) "#18171d" ["hgt"]=> string(5) "181cm" ["byr"]=> string(4) "1925" ["ecl"]=> string(3) "amb" ["iyr"]=> string(4) "2019" }
+
+
+current count= 18
+
+PASSED
+
+array(7) { ["byr"]=> string(4) "1943" ["pid"]=> string(9) "740807220" ["hgt"]=> string(4) "72in" ["ecl"]=> string(3) "amb" ["iyr"]=> string(4) "2013" ["eyr"]=> string(4) "2022" ["hcl"]=> string(7) "#cfa07d" }
+
+
+current count= 19
+
+PASSED
+
+array(8) { ["hcl"]=> string(7) "#733820" ["byr"]=> string(4) "1986" ["iyr"]=> string(4) "2016" ["hgt"]=> string(5) "184cm" ["cid"]=> string(3) "333" ["pid"]=> string(9) "768188726" ["ecl"]=> string(3) "oth" ["eyr"]=> string(4) "2030" }
+
+
+current count= 20
+
+PASSED
+
+array(7) { ["eyr"]=> string(4) "2022" ["byr"]=> string(4) "1996" ["hcl"]=> string(7) "#341e13" ["ecl"]=> string(3) "hzl" ["iyr"]=> string(4) "2015" ["hgt"]=> string(5) "160cm" ["pid"]=> string(9) "516401532" }
+
+
+current count= 21
+
+PASSED
+
+array(7) { ["hgt"]=> string(5) "182cm" ["ecl"]=> string(3) "grn" ["pid"]=> string(9) "336742028" ["iyr"]=> string(4) "2014" ["hcl"]=> string(7) "#34f021" ["byr"]=> string(4) "1967" ["eyr"]=> string(4) "2029" }
+
+
+current count= 22 failed byr
+
+PASSED
+
+array(7) { ["hgt"]=> string(5) "169cm" ["ecl"]=> string(3) "gry" ["hcl"]=> string(7) "#6b5442" ["iyr"]=> string(4) "2012" ["byr"]=> string(4) "1949" ["pid"]=> string(9) "131835020" ["eyr"]=> string(4) "2022" }
+
+
+current count= 23 failed byr
+
+PASSED
+
+array(8) { ["iyr"]=> string(4) "2013" ["hcl"]=> string(7) "#7d3b0c" ["eyr"]=> string(4) "2024" ["hgt"]=> string(5) "190cm" ["pid"]=> string(9) "659772377" ["cid"]=> string(3) "226" ["ecl"]=> string(3) "oth" ["byr"]=> string(4) "1958" }
+
+
+current count= 24 failed iyr
+
+PASSED
+
+array(8) { ["cid"]=> string(3) "131" ["pid"]=> string(9) "896076106" ["hcl"]=> string(7) "#c0946f" ["byr"]=> string(4) "1930" ["hgt"]=> string(5) "162cm" ["eyr"]=> string(4) "2023" ["ecl"]=> string(3) "oth" ["iyr"]=> string(4) "2017" }
+
+
+current count= 25
+
+PASSED
+
+array(8) { ["byr"]=> string(4) "1935" ["iyr"]=> string(4) "2012" ["pid"]=> string(9) "942509879" ["ecl"]=> string(3) "amb" ["hgt"]=> string(5) "185cm" ["cid"]=> string(3) "152" ["eyr"]=> string(4) "2024" ["hcl"]=> string(7) "#866857" }
+
+
+current count= 26 failed byr failed byr failed byr
+
+PASSED
+
+array(8) { ["cid"]=> string(3) "109" ["hgt"]=> string(5) "167cm" ["pid"]=> string(9) "545112664" ["ecl"]=> string(3) "grn" ["hcl"]=> string(7) "#a62fea" ["eyr"]=> string(4) "2026" ["iyr"]=> string(4) "2012" ["byr"]=> string(4) "1921" }
+
+
+current count= 27
+
+PASSED
+
+array(7) { ["pid"]=> string(9) "174997024" ["iyr"]=> string(4) "2012" ["eyr"]=> string(4) "2030" ["ecl"]=> string(3) "grn" ["hgt"]=> string(5) "150cm" ["byr"]=> string(4) "1997" ["hcl"]=> string(7) "#866857" }
+
+
+current count= 28
+
+PASSED
+
+array(7) { ["pid"]=> string(9) "451921339" ["hgt"]=> string(5) "181cm" ["hcl"]=> string(7) "#888785" ["iyr"]=> string(4) "2017" ["eyr"]=> string(4) "2026" ["byr"]=> string(4) "1936" ["ecl"]=> string(3) "hzl" }
+
+
+current count= 29 failed byr failed iyr
+
+PASSED
+
+array(7) { ["byr"]=> string(4) "1954" ["hcl"]=> string(7) "#341e13" ["eyr"]=> string(4) "2023" ["pid"]=> string(9) "129321944" ["iyr"]=> string(4) "2012" ["hgt"]=> string(5) "183cm" ["ecl"]=> string(3) "amb" }
+
+
+current count= 30
+
+PASSED
+
+array(7) { ["hgt"]=> string(5) "164cm" ["pid"]=> string(9) "596870080" ["ecl"]=> string(3) "hzl" ["eyr"]=> string(4) "2021" ["iyr"]=> string(4) "2017" ["hcl"]=> string(7) "#a97842" ["byr"]=> string(4) "1951" }
+
+
+current count= 31 failed field
+
+PASSED
+
+array(8) { ["iyr"]=> string(4) "2012" ["pid"]=> string(9) "900043442" ["hcl"]=> string(7) "#ceb3a1" ["cid"]=> string(3) "124" ["byr"]=> string(4) "1941" ["ecl"]=> string(3) "blu" ["hgt"]=> string(5) "156cm" ["eyr"]=> string(4) "2025" }
+
+
+current count= 32 failed field failed field
+
+PASSED
+
+array(7) { ["pid"]=> string(9) "147112660" ["hcl"]=> string(7) "#ceb3a1" ["eyr"]=> string(4) "2029" ["hgt"]=> string(5) "159cm" ["ecl"]=> string(3) "grn" ["iyr"]=> string(4) "2014" ["byr"]=> string(4) "1967" }
+
+
+current count= 33
+
+PASSED
+
+array(7) { ["iyr"]=> string(4) "2015" ["pid"]=> string(9) "502975636" ["hgt"]=> string(4) "71in" ["byr"]=> string(4) "1994" ["hcl"]=> string(7) "#18171d" ["ecl"]=> string(3) "amb" ["eyr"]=> string(4) "2029" }
+
+
+current count= 34 failed field
+
+PASSED
+
+array(7) { ["pid"]=> string(9) "859849571" ["ecl"]=> string(3) "amb" ["hcl"]=> string(7) "#6b5442" ["hgt"]=> string(5) "193cm" ["byr"]=> string(4) "1980" ["iyr"]=> string(4) "2017" ["eyr"]=> string(4) "2020" }
+
+
+current count= 35 failed byr
+
+PASSED
+
+array(8) { ["eyr"]=> string(4) "2020" ["cid"]=> string(3) "326" ["byr"]=> string(4) "1989" ["ecl"]=> string(3) "gry" ["hgt"]=> string(5) "160cm" ["hcl"]=> string(7) "#cc080c" ["pid"]=> string(9) "319135853" ["iyr"]=> string(4) "2010" }
+
+
+current count= 36 failed iyr failed byr
+
+PASSED
+
+array(8) { ["pid"]=> string(9) "791025828" ["ecl"]=> string(3) "hzl" ["hgt"]=> string(5) "178cm" ["iyr"]=> string(4) "2017" ["hcl"]=> string(7) "#733820" ["byr"]=> string(4) "1960" ["eyr"]=> string(4) "2021" ["cid"]=> string(2) "66" }
+
+
+current count= 37 failed iyr
+
+PASSED
+
+array(7) { ["ecl"]=> string(3) "blu" ["hgt"]=> string(5) "181cm" ["eyr"]=> string(4) "2024" ["iyr"]=> string(4) "2010" ["pid"]=> string(9) "633234602" ["hcl"]=> string(7) "#2ce009" ["byr"]=> string(4) "1985" }
+
+
+current count= 38
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#c0946f" ["hgt"]=> string(5) "192cm" ["iyr"]=> string(4) "2012" ["pid"]=> string(9) "120684397" ["ecl"]=> string(3) "grn" ["eyr"]=> string(4) "2027" ["byr"]=> string(4) "1974" }
+
+
+current count= 39 failed field
+
+PASSED
+
+array(8) { ["hcl"]=> string(7) "#733820" ["hgt"]=> string(5) "168cm" ["cid"]=> string(3) "307" ["iyr"]=> string(4) "2014" ["byr"]=> string(4) "1981" ["ecl"]=> string(3) "hzl" ["pid"]=> string(9) "898831724" ["eyr"]=> string(4) "2026" }
+
+
+current count= 40 failed iyr failed hcl failed byr
+
+PASSED
+
+array(7) { ["iyr"]=> string(4) "2017" ["byr"]=> string(4) "1998" ["hcl"]=> string(7) "#ceb3a1" ["pid"]=> string(9) "274178898" ["eyr"]=> string(4) "2027" ["ecl"]=> string(3) "brn" ["hgt"]=> string(5) "183cm" }
+
+
+current count= 41 failed field failed height
+
+PASSED
+
+array(7) { ["ecl"]=> string(3) "oth" ["pid"]=> string(9) "441517075" ["hcl"]=> string(7) "#c0946f" ["iyr"]=> string(4) "2015" ["hgt"]=> string(5) "188cm" ["eyr"]=> string(4) "2024" ["byr"]=> string(4) "1920" }
+
+
+current count= 42 failed field
+
+PASSED
+
+array(7) { ["pid"]=> string(9) "591478424" ["ecl"]=> string(3) "grn" ["hcl"]=> string(7) "#888785" ["byr"]=> string(4) "1929" ["eyr"]=> string(4) "2023" ["hgt"]=> string(5) "173cm" ["iyr"]=> string(4) "2017" }
+
+
+current count= 43 failed field failed field failed field failed iyr
+
+PASSED
+
+array(7) { ["iyr"]=> string(4) "2020" ["eyr"]=> string(4) "2021" ["ecl"]=> string(3) "amb" ["hgt"]=> string(4) "59in" ["pid"]=> string(9) "594829025" ["hcl"]=> string(7) "#93092e" ["byr"]=> string(4) "1976" }
+
+
+current count= 44
+
+PASSED
+
+array(8) { ["hcl"]=> string(7) "#a97842" ["eyr"]=> string(4) "2030" ["byr"]=> string(4) "1937" ["iyr"]=> string(4) "2018" ["cid"]=> string(3) "295" ["ecl"]=> string(3) "oth" ["hgt"]=> string(5) "166cm" ["pid"]=> string(9) "282634012" }
+
+
+current count= 45
+
+PASSED
+
+array(8) { ["hgt"]=> string(5) "171cm" ["hcl"]=> string(7) "#623a2f" ["byr"]=> string(4) "1956" ["pid"]=> string(9) "068178613" ["cid"]=> string(3) "214" ["iyr"]=> string(4) "2012" ["eyr"]=> string(4) "2026" ["ecl"]=> string(3) "brn" }
+
+
+current count= 46
+
+PASSED
+
+array(7) { ["byr"]=> string(4) "1921" ["hgt"]=> string(5) "161cm" ["hcl"]=> string(7) "#888785" ["ecl"]=> string(3) "brn" ["pid"]=> string(9) "010348794" ["eyr"]=> string(4) "2023" ["iyr"]=> string(4) "2011" }
+
+
+current count= 47
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#a97842" ["iyr"]=> string(4) "2010" ["byr"]=> string(4) "1955" ["eyr"]=> string(4) "2024" ["pid"]=> string(9) "473791166" ["ecl"]=> string(3) "brn" ["hgt"]=> string(5) "175cm" }
+
+
+current count= 48
+
+PASSED
+
+array(8) { ["eyr"]=> string(4) "2028" ["ecl"]=> string(3) "grn" ["pid"]=> string(9) "186196675" ["byr"]=> string(4) "1945" ["hgt"]=> string(5) "155cm" ["cid"]=> string(3) "349" ["iyr"]=> string(4) "2011" ["hcl"]=> string(7) "#6b5442" }
+
+
+current count= 49
+
+PASSED
+
+array(8) { ["hgt"]=> string(5) "161cm" ["eyr"]=> string(4) "2030" ["cid"]=> string(3) "221" ["pid"]=> string(9) "994494879" ["hcl"]=> string(7) "#733820" ["iyr"]=> string(4) "2012" ["ecl"]=> string(3) "blu" ["byr"]=> string(4) "1957" }
+
+
+current count= 50 failed byr
+
+PASSED
+
+array(7) { ["hgt"]=> string(5) "178cm" ["eyr"]=> string(4) "2029" ["hcl"]=> string(7) "#733820" ["byr"]=> string(4) "1962" ["iyr"]=> string(4) "2017" ["ecl"]=> string(3) "blu" ["pid"]=> string(9) "567713232" }
+
+
+current count= 51
+
+PASSED
+
+array(8) { ["hcl"]=> string(7) "#fffffd" ["byr"]=> string(4) "1928" ["pid"]=> string(9) "390162554" ["eyr"]=> string(4) "2030" ["cid"]=> string(2) "79" ["hgt"]=> string(5) "150cm" ["ecl"]=> string(3) "amb" ["iyr"]=> string(4) "2019" }
+
+
+current count= 52
+
+PASSED
+
+array(8) { ["eyr"]=> string(4) "2030" ["cid"]=> string(3) "320" ["hgt"]=> string(5) "171cm" ["hcl"]=> string(7) "#888785" ["pid"]=> string(9) "540720799" ["ecl"]=> string(3) "amb" ["iyr"]=> string(4) "2012" ["byr"]=> string(4) "1979" }
+
+
+current count= 53
+
+PASSED
+
+array(8) { ["byr"]=> string(4) "1921" ["ecl"]=> string(3) "oth" ["pid"]=> string(9) "204986110" ["eyr"]=> string(4) "2023" ["hgt"]=> string(5) "154cm" ["iyr"]=> string(4) "2017" ["hcl"]=> string(7) "#341e13" ["cid"]=> string(3) "126" }
+
+
+current count= 54 failed field
+
+PASSED
+
+array(8) { ["hgt"]=> string(5) "191cm" ["iyr"]=> string(4) "2010" ["cid"]=> string(3) "295" ["byr"]=> string(4) "1984" ["eyr"]=> string(4) "2025" ["hcl"]=> string(7) "#cfa07d" ["pid"]=> string(9) "799775698" ["ecl"]=> string(3) "amb" }
+
+
+current count= 55 failed field
+
+PASSED
+
+array(7) { ["hgt"]=> string(5) "176cm" ["byr"]=> string(4) "1963" ["pid"]=> string(9) "252396293" ["iyr"]=> string(4) "2012" ["ecl"]=> string(3) "brn" ["hcl"]=> string(7) "#ceb3a1" ["eyr"]=> string(4) "2030" }
+
+
+current count= 56 failed byr
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#a97842" ["pid"]=> string(9) "032201787" ["hgt"]=> string(5) "190cm" ["ecl"]=> string(3) "gry" ["eyr"]=> string(4) "2028" ["iyr"]=> string(4) "2012" ["byr"]=> string(4) "1994" }
+
+
+current count= 57
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#a97842" ["pid"]=> string(9) "064591809" ["ecl"]=> string(3) "hzl" ["byr"]=> string(4) "1927" ["hgt"]=> string(5) "165cm" ["iyr"]=> string(4) "2011" ["eyr"]=> string(4) "2028" }
+
+
+current count= 58 failed byr
+
+PASSED
+
+array(8) { ["cid"]=> string(3) "301" ["pid"]=> string(9) "106820988" ["iyr"]=> string(4) "2018" ["hcl"]=> string(7) "#cfa07d" ["eyr"]=> string(4) "2029" ["byr"]=> string(4) "1993" ["hgt"]=> string(5) "193cm" ["ecl"]=> string(3) "grn" }
+
+
+current count= 59 failed pid failed iyr
+
+PASSED
+
+array(8) { ["byr"]=> string(4) "2002" ["hgt"]=> string(5) "169cm" ["pid"]=> string(9) "629420566" ["eyr"]=> string(4) "2026" ["ecl"]=> string(3) "grn" ["hcl"]=> string(7) "#341e13" ["cid"]=> string(3) "166" ["iyr"]=> string(4) "2019" }
+
+
+current count= 60 failed field failed byr failed byr
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#733820" ["hgt"]=> string(5) "155cm" ["ecl"]=> string(3) "grn" ["iyr"]=> string(4) "2020" ["byr"]=> string(4) "1955" ["eyr"]=> string(4) "2028" ["pid"]=> string(9) "217362007" }
+
+
+current count= 61
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#18171d" ["ecl"]=> string(3) "gry" ["byr"]=> string(4) "1971" ["hgt"]=> string(5) "193cm" ["eyr"]=> string(4) "2020" ["pid"]=> string(9) "352009857" ["iyr"]=> string(4) "2013" }
+
+
+current count= 62 failed byr
+
+PASSED
+
+array(7) { ["pid"]=> string(9) "839955293" ["byr"]=> string(4) "1928" ["hcl"]=> string(7) "#fffffd" ["ecl"]=> string(3) "hzl" ["iyr"]=> string(4) "2011" ["hgt"]=> string(5) "162cm" ["eyr"]=> string(4) "2023" }
+
+
+current count= 63
+
+PASSED
+
+array(7) { ["hgt"]=> string(5) "175cm" ["pid"]=> string(9) "482827478" ["eyr"]=> string(4) "2028" ["hcl"]=> string(7) "#6b5442" ["ecl"]=> string(3) "blu" ["byr"]=> string(4) "1932" ["iyr"]=> string(4) "2010" }
+
+
+current count= 64
+
+PASSED
+
+array(8) { ["iyr"]=> string(4) "2020" ["hcl"]=> string(7) "#866857" ["ecl"]=> string(3) "brn" ["byr"]=> string(4) "1933" ["cid"]=> string(3) "269" ["pid"]=> string(9) "003931873" ["hgt"]=> string(5) "188cm" ["eyr"]=> string(4) "2022" }
+
+
+current count= 65
+
+PASSED
+
+array(8) { ["byr"]=> string(4) "1981" ["hcl"]=> string(7) "#fffffd" ["hgt"]=> string(5) "160cm" ["cid"]=> string(3) "311" ["ecl"]=> string(3) "brn" ["eyr"]=> string(4) "2025" ["pid"]=> string(9) "930857758" ["iyr"]=> string(4) "2014" }
+
+
+current count= 66
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#cfa07d" ["hgt"]=> string(4) "73in" ["ecl"]=> string(3) "gry" ["pid"]=> string(9) "383281251" ["iyr"]=> string(4) "2013" ["byr"]=> string(4) "1934" ["eyr"]=> string(4) "2026" }
+
+
+current count= 67 failed field failed byr
+
+PASSED
+
+array(8) { ["iyr"]=> string(4) "2014" ["hcl"]=> string(7) "#b6652a" ["pid"]=> string(9) "445799347" ["hgt"]=> string(5) "188cm" ["byr"]=> string(4) "1960" ["eyr"]=> string(4) "2030" ["cid"]=> string(3) "290" ["ecl"]=> string(3) "amb" }
+
+
+current count= 68 failed cm
+
+PASSED
+
+array(7) { ["hgt"]=> string(5) "168cm" ["eyr"]=> string(4) "2021" ["pid"]=> string(9) "725299968" ["ecl"]=> string(3) "grn" ["byr"]=> string(4) "1932" ["iyr"]=> string(4) "2016" ["hcl"]=> string(7) "#888785" }
+
+
+current count= 69
+
+PASSED
+
+array(8) { ["hgt"]=> string(5) "161cm" ["hcl"]=> string(7) "#ceb3a1" ["byr"]=> string(4) "1962" ["eyr"]=> string(4) "2026" ["iyr"]=> string(4) "2013" ["ecl"]=> string(3) "amb" ["pid"]=> string(9) "695426469" ["cid"]=> string(3) "227" }
+
+
+current count= 70 failed ecl
+
+PASSED
+
+array(8) { ["pid"]=> string(9) "697500517" ["byr"]=> string(4) "1968" ["hgt"]=> string(5) "169cm" ["hcl"]=> string(7) "#fffffd" ["ecl"]=> string(3) "grn" ["cid"]=> string(3) "143" ["iyr"]=> string(4) "2010" ["eyr"]=> string(4) "2027" }
+
+
+current count= 71 failed byr failed byr failed field
+
+PASSED
+
+array(8) { ["iyr"]=> string(4) "2019" ["byr"]=> string(4) "1960" ["ecl"]=> string(3) "hzl" ["eyr"]=> string(4) "2021" ["hgt"]=> string(5) "184cm" ["cid"]=> string(2) "66" ["hcl"]=> string(7) "#866857" ["pid"]=> string(9) "412920622" }
+
+
+current count= 72
+
+PASSED
+
+array(7) { ["eyr"]=> string(4) "2025" ["hcl"]=> string(7) "#888785" ["iyr"]=> string(4) "2018" ["byr"]=> string(4) "1956" ["pid"]=> string(9) "698098389" ["ecl"]=> string(3) "grn" ["hgt"]=> string(5) "173cm" }
+
+
+current count= 73
+
+PASSED
+
+array(7) { ["ecl"]=> string(3) "blu" ["byr"]=> string(4) "1935" ["pid"]=> string(9) "354892542" ["hgt"]=> string(5) "161cm" ["iyr"]=> string(4) "2018" ["eyr"]=> string(4) "2021" ["hcl"]=> string(7) "#b6652a" }
+
+
+current count= 74 failed iyr
+
+PASSED
+
+array(7) { ["iyr"]=> string(4) "2018" ["byr"]=> string(4) "1934" ["hcl"]=> string(7) "#a97842" ["pid"]=> string(9) "859748861" ["ecl"]=> string(3) "oth" ["hgt"]=> string(5) "175cm" ["eyr"]=> string(4) "2025" }
+
+
+current count= 75
+
+PASSED
+
+array(7) { ["byr"]=> string(4) "1930" ["iyr"]=> string(4) "2018" ["eyr"]=> string(4) "2022" ["hgt"]=> string(5) "175cm" ["hcl"]=> string(7) "#292092" ["ecl"]=> string(3) "brn" ["pid"]=> string(9) "987163365" }
+
+
+current count= 76 failed byr failed field failed field failed byr
+
+PASSED
+
+array(7) { ["eyr"]=> string(4) "2021" ["hgt"]=> string(4) "74in" ["hcl"]=> string(7) "#cfa07d" ["iyr"]=> string(4) "2014" ["byr"]=> string(4) "1932" ["pid"]=> string(9) "641867677" ["ecl"]=> string(3) "grn" }
+
+
+current count= 77
+
+PASSED
+
+array(7) { ["ecl"]=> string(3) "gry" ["hgt"]=> string(5) "185cm" ["pid"]=> string(9) "556229206" ["iyr"]=> string(4) "2013" ["byr"]=> string(4) "1984" ["hcl"]=> string(7) "#fffffd" ["eyr"]=> string(4) "2028" }
+
+
+current count= 78 failed iyr
+
+PASSED
+
+array(7) { ["eyr"]=> string(4) "2025" ["byr"]=> string(4) "2001" ["hcl"]=> string(7) "#cdb7f9" ["pid"]=> string(9) "377402126" ["ecl"]=> string(3) "hzl" ["hgt"]=> string(5) "184cm" ["iyr"]=> string(4) "2019" }
+
+
+current count= 79
+
+PASSED
+
+array(7) { ["byr"]=> string(4) "1939" ["hgt"]=> string(5) "180cm" ["eyr"]=> string(4) "2029" ["ecl"]=> string(3) "oth" ["hcl"]=> string(7) "#733820" ["iyr"]=> string(4) "2016" ["pid"]=> string(9) "733456875" }
+
+
+current count= 80
+
+PASSED
+
+array(8) { ["pid"]=> string(9) "883743276" ["hcl"]=> string(7) "#7d3b0c" ["eyr"]=> string(4) "2022" ["ecl"]=> string(3) "blu" ["byr"]=> string(4) "1928" ["hgt"]=> string(5) "150cm" ["cid"]=> string(3) "150" ["iyr"]=> string(4) "2013" }
+
+
+current count= 81 failed field failed byr
+
+PASSED
+
+array(7) { ["pid"]=> string(9) "284399238" ["ecl"]=> string(3) "gry" ["hcl"]=> string(7) "#888785" ["iyr"]=> string(4) "2019" ["hgt"]=> string(5) "168cm" ["byr"]=> string(4) "1944" ["eyr"]=> string(4) "2022" }
+
+
+current count= 82 failed eyr failed eyr
+
+PASSED
+
+array(7) { ["byr"]=> string(4) "1944" ["ecl"]=> string(3) "gry" ["pid"]=> string(9) "962700562" ["iyr"]=> string(4) "2011" ["hcl"]=> string(7) "#866857" ["eyr"]=> string(4) "2022" ["hgt"]=> string(5) "191cm" }
+
+
+current count= 83 failed byr failed eyr
+
+PASSED
+
+array(8) { ["pid"]=> string(9) "400034647" ["byr"]=> string(4) "1927" ["hgt"]=> string(5) "165cm" ["iyr"]=> string(4) "2017" ["ecl"]=> string(3) "brn" ["eyr"]=> string(4) "2024" ["cid"]=> string(3) "144" ["hcl"]=> string(7) "#341e13" }
+
+
+current count= 84
+
+PASSED
+
+array(8) { ["hcl"]=> string(7) "#733820" ["hgt"]=> string(5) "153cm" ["eyr"]=> string(4) "2027" ["byr"]=> string(4) "1935" ["pid"]=> string(9) "217121064" ["cid"]=> string(3) "120" ["iyr"]=> string(4) "2012" ["ecl"]=> string(3) "grn" }
+
+
+current count= 85
+
+PASSED
+
+array(8) { ["hgt"]=> string(5) "168cm" ["hcl"]=> string(7) "#866857" ["iyr"]=> string(4) "2012" ["pid"]=> string(10) "1527348755" ["byr"]=> string(4) "1946" ["eyr"]=> string(4) "2028" ["cid"]=> string(3) "184" ["ecl"]=> string(3) "amb" }
+
+
+current count= 86
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#a97842" ["byr"]=> string(4) "1967" ["hgt"]=> string(5) "152cm" ["eyr"]=> string(4) "2030" ["ecl"]=> string(3) "blu" ["pid"]=> string(9) "929661915" ["iyr"]=> string(4) "2018" }
+
+
+current count= 87
+
+PASSED
+
+array(8) { ["pid"]=> string(9) "671485026" ["hgt"]=> string(5) "188cm" ["byr"]=> string(4) "1974" ["iyr"]=> string(4) "2015" ["ecl"]=> string(3) "grn" ["cid"]=> string(3) "268" ["eyr"]=> string(4) "2021" ["hcl"]=> string(7) "#c0946f" }
+
+
+current count= 88
+
+PASSED
+
+array(8) { ["pid"]=> string(9) "789877199" ["iyr"]=> string(4) "2011" ["cid"]=> string(3) "219" ["eyr"]=> string(4) "2029" ["ecl"]=> string(3) "oth" ["byr"]=> string(4) "1991" ["hcl"]=> string(7) "#866857" ["hgt"]=> string(5) "154cm" }
+
+
+current count= 89
+
+PASSED
+
+array(8) { ["cid"]=> string(3) "137" ["pid"]=> string(9) "059579902" ["eyr"]=> string(4) "2020" ["byr"]=> string(4) "1952" ["hcl"]=> string(7) "#18171d" ["iyr"]=> string(4) "2020" ["hgt"]=> string(5) "172cm" ["ecl"]=> string(3) "oth" }
+
+
+current count= 90 failed byr
+
+PASSED
+
+array(8) { ["hgt"]=> string(5) "192cm" ["ecl"]=> string(3) "oth" ["iyr"]=> string(4) "2017" ["pid"]=> string(9) "264538307" ["byr"]=> string(4) "1994" ["cid"]=> string(3) "285" ["hcl"]=> string(7) "#18171d" ["eyr"]=> string(4) "2030" }
+
+
+current count= 91 failed byr
+
+PASSED
+
+array(7) { ["iyr"]=> string(4) "2012" ["eyr"]=> string(4) "2022" ["hgt"]=> string(5) "178cm" ["hcl"]=> string(7) "#888785" ["ecl"]=> string(3) "hzl" ["byr"]=> string(4) "1998" ["pid"]=> string(9) "000080585" }
+
+
+current count= 92
+
+PASSED
+
+array(8) { ["pid"]=> string(9) "719620152" ["hcl"]=> string(7) "#b6652a" ["cid"]=> string(3) "133" ["ecl"]=> string(3) "hzl" ["byr"]=> string(4) "1983" ["iyr"]=> string(4) "2012" ["hgt"]=> string(5) "175cm" ["eyr"]=> string(4) "2024" }
+
+
+current count= 93 failed eyr
+
+PASSED
+
+array(8) { ["iyr"]=> string(4) "2010" ["pid"]=> string(9) "842124616" ["ecl"]=> string(3) "hzl" ["eyr"]=> string(4) "2025" ["cid"]=> string(3) "146" ["hcl"]=> string(7) "#733820" ["hgt"]=> string(5) "166cm" ["byr"]=> string(4) "1987" }
+
+
+current count= 94 failed byr failed iyr
+
+PASSED
+
+array(7) { ["byr"]=> string(4) "1932" ["eyr"]=> string(4) "2028" ["hcl"]=> string(7) "#6b5442" ["ecl"]=> string(3) "amb" ["pid"]=> string(9) "947149686" ["iyr"]=> string(4) "2015" ["hgt"]=> string(5) "187cm" }
+
+
+current count= 95
+
+PASSED
+
+array(8) { ["hcl"]=> string(7) "#a97842" ["cid"]=> string(3) "260" ["hgt"]=> string(5) "167cm" ["eyr"]=> string(4) "2027" ["byr"]=> string(4) "1973" ["ecl"]=> string(3) "oth" ["pid"]=> string(9) "741678753" ["iyr"]=> string(4) "2016" }
+
+
+current count= 96
+
+PASSED
+
+array(7) { ["pid"]=> string(9) "334234443" ["ecl"]=> string(3) "gry" ["hcl"]=> string(7) "#18171d" ["eyr"]=> string(4) "2020" ["iyr"]=> string(4) "2016" ["hgt"]=> string(5) "159cm" ["byr"]=> string(4) "1926" }
+
+
+current count= 97 failed eyr failed field
+
+PASSED
+
+array(8) { ["iyr"]=> string(4) "2012" ["byr"]=> string(4) "1971" ["hgt"]=> string(5) "168cm" ["cid"]=> string(3) "146" ["pid"]=> string(9) "673038025" ["hcl"]=> string(7) "#866857" ["eyr"]=> string(4) "2020" ["ecl"]=> string(3) "hzl" }
+
+
+current count= 98
+
+PASSED
+
+array(8) { ["eyr"]=> string(4) "2023" ["iyr"]=> string(4) "2017" ["pid"]=> string(9) "205596613" ["cid"]=> string(3) "298" ["hcl"]=> string(7) "#341e13" ["hgt"]=> string(5) "169cm" ["ecl"]=> string(3) "oth" ["byr"]=> string(4) "1996" }
+
+
+current count= 99 failed field failed byr failed field
+
+PASSED
+
+array(7) { ["eyr"]=> string(4) "2021" ["pid"]=> string(9) "422371422" ["ecl"]=> string(3) "oth" ["iyr"]=> string(4) "2015" ["hcl"]=> string(7) "#866857" ["byr"]=> string(4) "1963" ["hgt"]=> string(5) "174cm" }
+
+
+current count= 100
+
+PASSED
+
+array(7) { ["pid"]=> string(9) "006970943" ["hcl"]=> string(7) "#2f22ef" ["iyr"]=> string(4) "2020" ["ecl"]=> string(3) "gry" ["byr"]=> string(4) "1922" ["eyr"]=> string(4) "2024" ["hgt"]=> string(5) "163cm" }
+
+
+current count= 101 failed byr
+
+PASSED
+
+array(8) { ["hgt"]=> string(5) "178cm" ["eyr"]=> string(4) "2021" ["iyr"]=> string(4) "2016" ["pid"]=> string(9) "471529794" ["hcl"]=> string(7) "#b6652a" ["cid"]=> string(3) "192" ["ecl"]=> string(3) "grn" ["byr"]=> string(4) "1970" }
+
+
+current count= 102
+
+PASSED
+
+array(7) { ["iyr"]=> string(4) "2015" ["ecl"]=> string(3) "brn" ["hcl"]=> string(7) "#602927" ["hgt"]=> string(5) "187cm" ["pid"]=> string(9) "729284172" ["eyr"]=> string(4) "2024" ["byr"]=> string(4) "1932" }
+
+
+current count= 103 failed byr failed eyr
+
+PASSED
+
+array(7) { ["pid"]=> string(9) "875885919" ["hgt"]=> string(5) "159cm" ["iyr"]=> string(4) "2011" ["ecl"]=> string(3) "gry" ["byr"]=> string(4) "1988" ["hcl"]=> string(7) "#341e13" ["eyr"]=> string(4) "2028" }
+
+
+current count= 104 failed byr
+
+PASSED
+
+array(7) { ["ecl"]=> string(3) "brn" ["eyr"]=> string(4) "2029" ["hcl"]=> string(7) "#866857" ["iyr"]=> string(4) "2020" ["hgt"]=> string(5) "180cm" ["byr"]=> string(4) "2001" ["pid"]=> string(9) "668021168" }
+
+
+current count= 105
+
+PASSED
+
+array(8) { ["hcl"]=> string(7) "#c0946f" ["eyr"]=> string(4) "2024" ["ecl"]=> string(3) "amb" ["pid"]=> string(9) "013487714" ["byr"]=> string(4) "1965" ["hgt"]=> string(5) "172cm" ["cid"]=> string(3) "320" ["iyr"]=> string(4) "2020" }
+
+
+current count= 106
+
+PASSED
+
+array(7) { ["eyr"]=> string(4) "2025" ["pid"]=> string(9) "115479767" ["hcl"]=> string(7) "#866857" ["ecl"]=> string(3) "oth" ["hgt"]=> string(5) "163cm" ["iyr"]=> string(4) "2010" ["byr"]=> string(4) "1999" }
+
+
+current count= 107 failed eyr failed field
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#efcc98" ["hgt"]=> string(5) "176cm" ["byr"]=> string(4) "1994" ["pid"]=> string(9) "590539278" ["ecl"]=> string(3) "grn" ["iyr"]=> string(4) "2011" ["eyr"]=> string(4) "2021" }
+
+
+current count= 108
+
+PASSED
+
+array(7) { ["iyr"]=> string(4) "2017" ["eyr"]=> string(4) "2024" ["hgt"]=> string(5) "167cm" ["hcl"]=> string(7) "#b62e29" ["pid"]=> string(9) "495674801" ["byr"]=> string(4) "1970" ["ecl"]=> string(3) "brn" }
+
+
+current count= 109 failed iyr failed hcl
+
+PASSED
+
+array(8) { ["eyr"]=> string(4) "2030" ["pid"]=> string(9) "272955042" ["cid"]=> string(3) "319" ["iyr"]=> string(4) "2011" ["ecl"]=> string(3) "amb" ["byr"]=> string(4) "1999" ["hcl"]=> string(7) "#888785" ["hgt"]=> string(5) "158cm" }
+
+
+current count= 110
+
+PASSED
+
+array(8) { ["eyr"]=> string(4) "2025" ["pid"]=> string(9) "814305816" ["byr"]=> string(4) "1945" ["ecl"]=> string(3) "brn" ["hgt"]=> string(5) "162cm" ["iyr"]=> string(4) "2018" ["hcl"]=> string(7) "#a97842" ["cid"]=> string(3) "229" }
+
+
+current count= 111
+
+PASSED
+
+array(7) { ["byr"]=> string(4) "1996" ["eyr"]=> string(4) "2026" ["pid"]=> string(9) "582584802" ["hcl"]=> string(7) "#c0946f" ["iyr"]=> string(4) "2020" ["ecl"]=> string(3) "grn" ["hgt"]=> string(5) "162cm" }
+
+
+current count= 112
+
+PASSED
+
+array(8) { ["eyr"]=> string(4) "2027" ["hgt"]=> string(5) "155cm" ["byr"]=> string(4) "1925" ["hcl"]=> string(7) "#888785" ["cid"]=> string(3) "182" ["iyr"]=> string(4) "2014" ["ecl"]=> string(3) "brn" ["pid"]=> string(9) "250884352" }
+
+
+current count= 113
+
+PASSED
+
+array(8) { ["hgt"]=> string(5) "173cm" ["cid"]=> string(3) "135" ["iyr"]=> string(4) "2017" ["pid"]=> string(9) "661330507" ["byr"]=> string(4) "1950" ["eyr"]=> string(4) "2020" ["ecl"]=> string(3) "gry" ["hcl"]=> string(7) "#18171d" }
+
+
+current count= 114
+
+PASSED
+
+array(8) { ["pid"]=> string(9) "208932950" ["eyr"]=> string(4) "2030" ["hgt"]=> string(5) "179cm" ["iyr"]=> string(4) "2013" ["ecl"]=> string(3) "oth" ["byr"]=> string(4) "1981" ["cid"]=> string(2) "58" ["hcl"]=> string(7) "#6b5442" }
+
+
+current count= 115
+
+PASSED
+
+array(8) { ["hcl"]=> string(7) "#f183e7" ["iyr"]=> string(4) "2014" ["hgt"]=> string(5) "159cm" ["pid"]=> string(9) "614579850" ["ecl"]=> string(3) "gry" ["eyr"]=> string(4) "2029" ["cid"]=> string(3) "186" ["byr"]=> string(4) "1962" }
+
+
+current count= 116 failed field
+
+PASSED
+
+array(8) { ["hgt"]=> string(4) "68in" ["hcl"]=> string(7) "#733820" ["pid"]=> string(9) "228644594" ["eyr"]=> string(4) "2030" ["ecl"]=> string(3) "gry" ["iyr"]=> string(4) "2010" ["cid"]=> string(3) "334" ["byr"]=> string(4) "1951" }
+
+
+current count= 117 failed pid
+
+PASSED
+
+array(8) { ["pid"]=> string(9) "250155574" ["cid"]=> string(2) "84" ["hgt"]=> string(5) "157cm" ["ecl"]=> string(3) "grn" ["byr"]=> string(4) "1937" ["iyr"]=> string(4) "2017" ["eyr"]=> string(4) "2024" ["hcl"]=> string(7) "#b6652a" }
+
+
+current count= 118
+
+PASSED
+
+array(8) { ["pid"]=> string(9) "831823039" ["eyr"]=> string(4) "2028" ["iyr"]=> string(4) "2015" ["ecl"]=> string(3) "gry" ["hgt"]=> string(5) "192cm" ["cid"]=> string(3) "137" ["byr"]=> string(4) "1922" ["hcl"]=> string(7) "#6b5442" }
+
+
+current count= 119
+
+PASSED
+
+array(8) { ["hgt"]=> string(5) "193cm" ["byr"]=> string(4) "1941" ["eyr"]=> string(4) "2024" ["cid"]=> string(2) "56" ["hcl"]=> string(7) "#623a2f" ["ecl"]=> string(3) "amb" ["pid"]=> string(9) "351293754" ["iyr"]=> string(4) "2016" }
+
+
+current count= 120
+
+PASSED
+
+array(7) { ["byr"]=> string(4) "1947" ["iyr"]=> string(4) "2012" ["ecl"]=> string(3) "hzl" ["hcl"]=> string(7) "#602927" ["eyr"]=> string(4) "2028" ["pid"]=> string(9) "252010138" ["hgt"]=> string(5) "152cm" }
+
+
+current count= 121
+
+PASSED
+
+array(8) { ["hcl"]=> string(7) "#a97842" ["pid"]=> string(9) "801192586" ["ecl"]=> string(3) "hzl" ["iyr"]=> string(4) "2018" ["hgt"]=> string(5) "193cm" ["byr"]=> string(4) "1928" ["cid"]=> string(3) "323" ["eyr"]=> string(4) "2028" }
+
+
+current count= 122
+
+PASSED
+
+array(8) { ["hgt"]=> string(5) "151cm" ["pid"]=> string(9) "756347561" ["ecl"]=> string(3) "hzl" ["eyr"]=> string(4) "2024" ["cid"]=> string(3) "161" ["iyr"]=> string(4) "2016" ["hcl"]=> string(7) "#623a2f" ["byr"]=> string(4) "2002" }
+
+
+current count= 123
+
+PASSED
+
+array(7) { ["pid"]=> string(9) "648012871" ["iyr"]=> string(4) "2015" ["ecl"]=> string(3) "blu" ["eyr"]=> string(4) "2025" ["hcl"]=> string(7) "#623a2f" ["byr"]=> string(4) "1973" ["hgt"]=> string(5) "177cm" }
+
+
+current count= 124 failed height
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#b6652a" ["iyr"]=> string(4) "2018" ["ecl"]=> string(3) "grn" ["byr"]=> string(4) "1951" ["pid"]=> string(9) "077278028" ["eyr"]=> string(4) "2024" ["hgt"]=> string(4) "62in" }
+
+
+current count= 125
+
+PASSED
+
+array(8) { ["hgt"]=> string(5) "164cm" ["pid"]=> string(9) "410770618" ["byr"]=> string(4) "1958" ["iyr"]=> string(4) "2019" ["eyr"]=> string(4) "2030" ["ecl"]=> string(3) "gry" ["hcl"]=> string(7) "#fffffd" ["cid"]=> string(3) "293" }
+
+
+current count= 126 failed byr
+
+PASSED
+
+array(8) { ["ecl"]=> string(3) "grn" ["iyr"]=> string(4) "2012" ["hgt"]=> string(5) "150cm" ["eyr"]=> string(4) "2024" ["byr"]=> string(4) "1926" ["pid"]=> string(9) "954310029" ["cid"]=> string(2) "64" ["hcl"]=> string(7) "#fffffd" }
+
+
+current count= 127
+
+PASSED
+
+array(8) { ["ecl"]=> string(3) "oth" ["eyr"]=> string(4) "2027" ["pid"]=> string(9) "091152959" ["hgt"]=> string(5) "180cm" ["hcl"]=> string(7) "#ceb3a1" ["iyr"]=> string(4) "2015" ["cid"]=> string(3) "350" ["byr"]=> string(4) "1924" }
+
+
+current count= 128
+
+PASSED
+
+array(8) { ["iyr"]=> string(4) "2017" ["hcl"]=> string(7) "#49a793" ["eyr"]=> string(4) "2021" ["cid"]=> string(3) "144" ["byr"]=> string(4) "1966" ["pid"]=> string(9) "717543257" ["hgt"]=> string(5) "161cm" ["ecl"]=> string(3) "hzl" }
+
+
+current count= 129
+
+PASSED
+
+array(8) { ["eyr"]=> string(4) "2025" ["ecl"]=> string(3) "brn" ["hgt"]=> string(4) "60in" ["pid"]=> string(9) "391973520" ["byr"]=> string(4) "1928" ["cid"]=> string(2) "77" ["iyr"]=> string(4) "2012" ["hcl"]=> string(7) "#602927" }
+
+
+current count= 130
+
+PASSED
+
+array(7) { ["iyr"]=> string(4) "2013" ["hgt"]=> string(5) "161cm" ["pid"]=> string(9) "784483994" ["byr"]=> string(4) "1991" ["hcl"]=> string(7) "#cfa07d" ["eyr"]=> string(4) "2024" ["ecl"]=> string(3) "grn" }
+
+
+current count= 131 failed field failed byr
+
+PASSED
+
+array(7) { ["eyr"]=> string(4) "2029" ["iyr"]=> string(4) "2010" ["hcl"]=> string(7) "#623a2f" ["ecl"]=> string(3) "gry" ["hgt"]=> string(5) "152cm" ["pid"]=> string(9) "572128647" ["byr"]=> string(4) "1996" }
+
+
+current count= 132 failed field
+
+PASSED
+
+array(7) { ["eyr"]=> string(4) "2029" ["pid"]=> string(9) "233353682" ["byr"]=> string(4) "1968" ["ecl"]=> string(3) "gry" ["hgt"]=> string(5) "181cm" ["iyr"]=> string(4) "2011" ["hcl"]=> string(7) "#efcc98" }
+
+
+current count= 133 failed field failed cm failed field
+
+PASSED
+
+array(7) { ["ecl"]=> string(3) "hzl" ["eyr"]=> string(4) "2024" ["pid"]=> string(9) "537492791" ["hgt"]=> string(5) "186cm" ["byr"]=> string(4) "1952" ["hcl"]=> string(7) "#cfa07d" ["iyr"]=> string(4) "2020" }
+
+
+current count= 134 failed field failed pid failed byr
+
+PASSED
+
+array(7) { ["byr"]=> string(4) "1923" ["hgt"]=> string(4) "70in" ["pid"]=> string(9) "904825661" ["hcl"]=> string(7) "#b6652a" ["iyr"]=> string(4) "2010" ["eyr"]=> string(4) "2020" ["ecl"]=> string(3) "oth" }
+
+
+current count= 135 failed field
+
+PASSED
+
+array(7) { ["hcl"]=> string(7) "#18171d" ["iyr"]=> string(4) "2016" ["ecl"]=> string(3) "amb" ["pid"]=> string(9) "613754206" ["byr"]=> string(4) "1975" ["hgt"]=> string(5) "164cm" ["eyr"]=> string(4) "2025" }
+
+
+current count= 136
+
+PASSED
+
+array(8) { ["byr"]=> string(4) "1938" ["iyr"]=> string(4) "2017" ["hcl"]=> string(7) "#623a2f" ["cid"]=> string(3) "191" ["eyr"]=> string(4) "2027" ["hgt"]=> string(5) "174cm" ["pid"]=> string(9) "287108745" ["ecl"]=> string(3) "amb" }
+
+
+current count= 137 failed byr
+
+PASSED
+
+array(8) { ["ecl"]=> string(3) "amb" ["hgt"]=> string(5) "177cm" ["hcl"]=> string(7) "#b6a3ce" ["eyr"]=> string(4) "2025" ["byr"]=> string(4) "1967" ["pid"]=> string(9) "506927066" ["iyr"]=> string(4) "2018" ["cid"]=> string(2) "93" }
+
+
+current count= 138
+
+PASSED
+
+array(8) { ["byr"]=> string(4) "1964" ["hgt"]=> string(5) "173cm" ["eyr"]=> string(4) "2030" ["cid"]=> string(3) "106" ["pid"]=> string(9) "587635596" ["iyr"]=> string(4) "2012" ["hcl"]=> string(7) "#fb5993" ["ecl"]=> string(3) "hzl" }
+
+
+current count= 139 failed byr failed in failed field
+
+PASSED
+
+array(8) { ["ecl"]=> string(3) "grn" ["hcl"]=> string(7) "#efcc98" ["byr"]=> string(4) "1935" ["eyr"]=> string(4) "2025" ["iyr"]=> string(4) "2018" ["hgt"]=> string(4) "65in" ["pid"]=> string(9) "396444938" ["cid"]=> string(3) "293" }
+
+
+current count= 140
+
+PASSED
+
+array(7) { ["hgt"]=> string(4) "64in" ["ecl"]=> string(3) "oth" ["hcl"]=> string(7) "#18171d" ["pid"]=> string(9) "105602506" ["byr"]=> string(4) "1973" ["eyr"]=> string(4) "2022" ["iyr"]=> string(4) "2014" }
+
+
+current count= 141 failed byr 141 Test Two COMPLETED in:0.0028 seconds.
