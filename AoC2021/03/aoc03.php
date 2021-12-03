@@ -4,7 +4,7 @@ function readMyFile($fname)
 {
 
     $text1 = file($fname, FILE_IGNORE_NEW_LINES);
-    $text = array_map(function ($line){
+    $text = array_map(function ($line) {
         return str_split($line);
     }, $text1);
     return $text;
@@ -14,54 +14,101 @@ function myTestOne()
 {
 
     $values = readMyFile('text.text');
-    echo "--------------------------:" . PHP_EOL;
-    var_dump($values);
     file_put_contents('values.json', json_encode($values));
+    $valuesCount = count($values);
     $gammaRate = [];
     $epsilonRate = [];
-    $sums = [];
+    $sums = array_fill(0, count($values[0]), 0);
 
-    for ($i=0; $i<count($values); $i++) {
-
-        // $gammaRate[]  = (array_sum(array_column($values, array_shift(array_keys($values))))>count($values)) ? 1 : 0;
-        // $epsilonRate[] = $gammaRate[$i] ? 0 : 1;
-      
+    foreach ($values as $line) {
+        for ($i = 0; $i < count($line); $i++) {
+            $sums[$i] += $line[$i];
+        }
     }
-    var_dump($gammaRate);
-    var_dump($epsilonRate);
+    $gammaRate = implode("", array_map(function ($x) use ($valuesCount) {
+        return ($x > $valuesCount / 2) ? 1 : 0;
+    }, $sums));
+    $epsilonRate = implode("", array_map(function ($x) use ($valuesCount) {
+        return ($x > $valuesCount / 2) ? 0 : 1;
+    }, $sums));
+    // echo 'gama array:  ';
+    // var_dump($gammaRate);
 
-
-    // return $gammaRate * $epsilonRate;
+    return bindec($gammaRate) * bindec($epsilonRate);
 }
 function myTestTwo()
 {
     $values = readMyFile('text.text');
-
-    $sumForward = 0;
-    $sumDepth = 0;
-    $aim = 0;
-
-    foreach ($values as $line) {
-        $exploded = explode(' ', $line);
-        $movement = $exploded[0];
-        $val = (int) $exploded[1];
-
-        switch ($movement) {
-            case 'forward':
-                $sumForward += $val;
-                $sumDepth += $val * $aim;
-                break;
-            case 'down':
-                $aim += $val;
-                break;
-            case 'up':
-                $aim -= $val;
-                break;
+    $workingArray = $values;
+    file_put_contents('values.json', json_encode($values));
+    $valuesCount = count($values);
+    echo "vCount= " . $valuesCount . PHP_EOL;
+    $gammaRate = [];
+    $epsilonRate = [];
+    $sums = array_fill(0, count($values[0]), 0);
+    $foundIt = false;
+    $k = 0;
+    while (!$foundIt) {
+        $sum = 0;
+        foreach ($workingArray as $line) {
+            echo "line= " . $line[$k] . PHP_EOL;
+            $sum += $line[$k];
         }
+        // echo "sum= " . $sum . PHP_EOL;
+        $matchingValue = ($sum >= count($workingArray) / 2) ? 1 : 0;
+        $workingArray = array_filter(
+            $workingArray,
+            function ($x) use ($matchingValue, $k) {
+                return ($x[$k] == $matchingValue);
+            }
+        );
+        // echo "------matchingV-----------workingArr---------" . PHP_EOL;
+        // var_dump($matchingValue, $workingArray);
+        $foundIt = (count($workingArray) === 1) ? true : false;
+        $k++;
+    }
+    // echo "!!!!!!!!!!!!!!!!!!!!!!!! oxy" . PHP_EOL;
+    // var_dump($workingArray);
+    foreach ($workingArray as $flat) {
+        $flatArray = $flat;
+    }
+    var_dump($flatArray);
+    $oxygen = implode("", $flatArray);
+    
+    
+    $workingArray = $values;
+    $foundIt = false;
+    $k = 0;
+    while (!$foundIt) {
+        $sum = 0;
+        foreach ($workingArray as $line) {
+            // echo "line= " . $line[$k] . PHP_EOL;
+            $sum += $line[$k];
+        }
+        // echo "sum= " . $sum . PHP_EOL;
+        $matchingValue = ($sum >= count($workingArray) / 2) ? 0 : 1;
+        $workingArray = array_filter(
+            $workingArray,
+            function ($x) use ($matchingValue, $k) {
+                return ($x[$k] == $matchingValue);
+            }
+        );
+        // echo "------matchingV-----------workingArr---------" . PHP_EOL;
+        // var_dump($matchingValue, $workingArray);
+        $foundIt = (count($workingArray) === 1) ? true : false;
+        $k++;
     }
 
-
-    return $sumForward * $sumDepth;
+    // echo "!!!!!!!!!!!!!!!!!!!!!!!! co2" . PHP_EOL;
+    // var_dump($workingArray);
+    // var_dump($workingArray);
+    foreach ($workingArray as $flat) {
+        $flatArray = $flat;
+    }
+    $co2 = implode("", $flatArray);
+    // echo "oxygen= " . $oxygen;
+    // echo "co2= " . $co2;
+    return bindec($oxygen) * bindec($co2);
 }
 
 
@@ -73,9 +120,9 @@ $end = (float) array_sum(explode(' ', microtime()));
 echo PHP_EOL . "Test One COMPLETED in:" . sprintf("%.4f", ($end - $start)) . " seconds." . PHP_EOL;
 
 
-// $start = (float) array_sum(explode(' ', microtime()));
+$start = (float) array_sum(explode(' ', microtime()));
 
-// echo myTestTwo();
+echo myTestTwo();
 
-// $end = (float) array_sum(explode(' ', microtime()));
-// echo PHP_EOL . "Test Two COMPLETED in:" . sprintf("%.4f", ($end - $start)) . " seconds.";
+$end = (float) array_sum(explode(' ', microtime()));
+echo PHP_EOL . "Test Two COMPLETED in:" . sprintf("%.4f", ($end - $start)) . " seconds.";
