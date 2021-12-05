@@ -18,9 +18,9 @@ function myTestOne()
     ];
 
     $values = readMyFile('text.text');
-    echo "--------------------------:" . PHP_EOL;
-    // var_dump($values);
-    file_put_contents('values.json', json_encode($values));
+    // echo "--------------------------:" . PHP_EOL;
+    // // var_dump($values);
+    // file_put_contents('values.json', json_encode($values));
     $boards = [];
     $counter = 1;
     foreach ($values as $line) {
@@ -37,11 +37,7 @@ function myTestOne()
         $pastNumbers = array_slice($drawnNumOrder, 0, $i);
         foreach ($boards as $key => $board) {
             for ($j = 0; $j < 5; $j++) {
-                // echo PHP_EOL . "itteration:  " . $j . PHP_EOL;
-                // var_dump($board[$j]);
-                // var_dump($pastNumbers);
-                // echo "---------diff--------------";
-                // var_dump(array_diff($board[$j], $pastNumbers));
+
                 if (empty(array_diff($board[$j], $pastNumbers))) {
                     $winningBoard = $key;
                     $winningNumber = end($pastNumbers);
@@ -57,17 +53,10 @@ function myTestOne()
     }
     $winArrayScoreNum = [];
     foreach ($boards[$winningBoard] as $row) {
-        // var_dump($row);
-        // var_dump($pastNumbers);
-        // echo "__________________" . PHP_EOL;
-        // var_dump(array_diff($row, $pastNumbers));
+
         $winArrayScoreNum = array_merge($winArrayScoreNum, array_diff($row, $pastNumbers));
     }
     $boardScore = array_sum($winArrayScoreNum);
-    echo "-------------------" . PHP_EOL;
-    echo "wining num:  " . $winningNumber;
-    echo "   winning board:  " . $winningBoard . PHP_EOL;
-    echo "   winning board sum:  " . $boardScore . PHP_EOL;
 
     return $winningNumber * $boardScore;
 }
@@ -81,9 +70,9 @@ function myTestTwo()
     ];
 
     $values = readMyFile('text2.text');
-    echo "--------------------------:" . PHP_EOL;
+    // echo "--------------------------:" . PHP_EOL;
     // var_dump($values);
-    file_put_contents('values2.json', json_encode($values));
+    // file_put_contents('values2.json', json_encode($values));
     $boards = [];
     $counter = 1;
     foreach ($values as $line) {
@@ -93,9 +82,6 @@ function myTestTwo()
     }
     $iterationStart = 5;
     $lastBoard = dumpTheWinningBoard($boards, $drawnNumOrder, $iterationStart);
-    echo "last one: " . PHP_EOL;
-    var_dump($lastBoard);
-
 
     $winningBoard = 0;
     $winningNumber = 0;
@@ -104,11 +90,7 @@ function myTestTwo()
         $pastNumbers = array_slice($drawnNumOrder, 0, $i);
         foreach ($lastBoard as $key => $board) {
             for ($j = 0; $j < 5; $j++) {
-                // echo PHP_EOL . "itteration:  " . $j . PHP_EOL;
-                // var_dump($board[$j]);
-                // var_dump($pastNumbers);
-                // echo "---------diff--------------";
-                // var_dump(array_diff($board[$j], $pastNumbers));
+
                 if (empty(array_diff($board[$j], $pastNumbers))) {
                     $winningBoard = $key;
                     $winningNumber = end($pastNumbers);
@@ -124,17 +106,10 @@ function myTestTwo()
     }
     $winArrayScoreNum = [];
     foreach ($lastBoard[$winningBoard] as $row) {
-        // var_dump($row);
-        // var_dump($pastNumbers);
-        // echo "__________________" . PHP_EOL;
-        // var_dump(array_diff($row, $pastNumbers));
+
         $winArrayScoreNum = array_merge($winArrayScoreNum, array_diff($row, $pastNumbers));
     }
     $boardScore = array_sum($winArrayScoreNum);
-    echo "-------------------" . PHP_EOL;
-    echo "wining num:  " . $winningNumber;
-    echo "   winning board:  " . $winningBoard . PHP_EOL;
-    echo "   winning board sum:  " . $boardScore . PHP_EOL;
 
     return $winningNumber * $boardScore;
 }
@@ -146,11 +121,7 @@ function dumpTheWinningBoard($boards, $drawnNumOrder, $iteration)
         $pastNumbers = array_slice($drawnNumOrder, 0, $i);
         foreach ($boards as $key => $board) {
             for ($j = 0; $j < 5; $j++) {
-                // echo PHP_EOL . "itteration:  " . $j . PHP_EOL;
-                // var_dump($board[$j]);
-                // var_dump($pastNumbers);
-                // echo "---------diff--------------";
-                // var_dump(array_diff($board[$j], $pastNumbers));
+
                 if (empty(array_diff($board[$j], $pastNumbers))) {
                     unset($boards[$key]);
                     return count($boards) === 1 ? $boards : dumpTheWinningBoard($boards, $drawnNumOrder, $i);
