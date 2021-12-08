@@ -1,7 +1,5 @@
 <?php
 
-
-
 /*$numSegments = [
 
     [0] => 6,
@@ -17,38 +15,6 @@
     
 
 ];*/
-
-
-
-
-function readMyFile($fname)
-{
-
-    $text = file($fname, FILE_IGNORE_NEW_LINES);
-    $textConc = [];
-    for ($i = 0; $i < count($text) - 1; $i += 2) {
-        $tempArr = [];
-        $tempArr[0] = explode(' ', $text[$i]);
-        array_pop($tempArr[0]);
-        $tempArr[1] = explode(' ', $text[$i + 1]);
-        var_dump($tempArr);
-        $textConc[$i / 2] = $tempArr;
-    }
-    var_dump($textConc);
-    return $textConc;
-}
-
-function readMyFile2($fname)
-{
-
-    $text = file($fname, FILE_IGNORE_NEW_LINES);
-    $textOutput = [];
-    for ($i = 0; $i < count($text) - 1; $i += 2) {
-
-        $textOutput[] = explode(' ', $text[$i + 1]);
-    }
-    return $textOutput;
-}
 
 function readMyFile3($fname)
 {
@@ -75,9 +41,6 @@ function readMyInputs($fname)
 function myTestOne()
 {
     $output = readMyFile3("text.text");
-    $numSegments = [6, 2, 5, 5, 4, 5, 6, 3, 7, 6];
-    // var_dump($output);
-    file_put_contents('output.json', json_encode($output));
     $count = 0;
     foreach ($output as $line) {
         $count += count(array_filter($line, fn ($x) => in_array(strlen($x), [2, 4, 3, 7])));
@@ -92,25 +55,15 @@ function myTestTwo()
 
     $output = readMyFile3("text.text");
     $inputs = readMyInputs("text.text");
-    $numSegments = [6, 2, 5, 5, 4, 5, 6, 3, 7, 6];
-
-    // var_dump($output);
-    file_put_contents('output2.json', json_encode($output));
-    file_put_contents('input.json', json_encode($inputs));
     $codeToNumbers = [];
     $i = 0;
     foreach ($output as $line) {
-        var_dump($line);
         $correctCode = array_map(fn ($x) => mySort($x), orderTheCode($inputs[$i]));
         $codeToNumbers[] = implode(array_map(function ($x) use ($correctCode) {
-            echo " x= " . mySort($x) . "   correctCode=  " . implode(',', $correctCode) . PHP_EOL;
             return array_search(mySort($x), $correctCode);
         }, $line));
-        echo end($codeToNumbers);
         $i++;
     }
-
-    var_dump($codeToNumbers);
 
     return array_sum($codeToNumbers);
 }
@@ -156,18 +109,17 @@ function orderTheCode($arr)
             if (count(array_diff(str_split($correctCode[1]), str_split($a))) == 0) $correctCode[3] = $a;
         }
     }
-    file_put_contents("arr.json", json_encode($arr));
-    file_put_contents("corrCode.json", json_encode($correctCode));
+
     return $correctCode;
 }
 
 
-// $start = (float) array_sum(explode(' ', microtime()));
+$start = (float) array_sum(explode(' ', microtime()));
 
-// echo myTestOne();
+echo myTestOne();
 
-// $end = (float) array_sum(explode(' ', microtime()));
-// echo PHP_EOL . "Test One COMPLETED in:" . sprintf("%.4f", ($end - $start)) . " seconds." . PHP_EOL;
+$end = (float) array_sum(explode(' ', microtime()));
+echo PHP_EOL . "Test One COMPLETED in:" . sprintf("%.4f", ($end - $start)) . " seconds." . PHP_EOL;
 
 
 $start = (float) array_sum(explode(' ', microtime()));
