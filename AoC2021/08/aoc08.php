@@ -61,6 +61,17 @@ function readMyFile3($fname)
     return $textOutput;
 }
 
+function readMyInputs($fname)
+{
+
+    $text = file($fname, FILE_IGNORE_NEW_LINES);
+    $textOutput = [];
+    foreach ($text as $t) {
+        $textOutput[] = explode(' ', explode(' | ', $t)[0]);
+    }
+    return $textOutput;
+}
+
 function myTestOne()
 {
     $output = readMyFile3("text.text");
@@ -80,22 +91,28 @@ function myTestTwo()
 {
 
     $output = readMyFile3("text.text");
+    $inputs = readMyInputs("text.text");
     $numSegments = [6, 2, 5, 5, 4, 5, 6, 3, 7, 6];
-    $code = ['cagedb', 'ab', 'gcdfa', 'fbcad', 'eafb', 'cdfbe', 'cdfgeb', 'dab', 'acedgfb', 'cefabd'];
-    $code = array_map(fn ($x) => mySort($x), $code);
+
     // var_dump($output);
     file_put_contents('output2.json', json_encode($output));
-    file_put_contents('code.json', json_encode($code));
+    file_put_contents('input.json', json_encode($inputs));
     $codeToNumbers = [];
+    $i = 0;
     foreach ($output as $line) {
         var_dump($line);
-        $codeToNumbers[] = implode(array_map(function ($x) use ($code) {
-            echo " x= " . mySort($x) . "   code=  " . implode(',', $code) . PHP_EOL;
-            return array_search(mySort($x), $code);
+        $correctCode = array_map(fn ($x) => mySort($x), orderTheCode($inputs[$i]));
+        $codeToNumbers[] = implode(array_map(function ($x) use ($correctCode) {
+            echo " x= " . mySort($x) . "   correctCode=  " . implode(',', $correctCode) . PHP_EOL;
+            return array_search(mySort($x), $correctCode);
         }, $line));
+        echo end($codeToNumbers);
+        $i++;
     }
+
     var_dump($codeToNumbers);
-    return true;
+
+    return array_sum($codeToNumbers);
 }
 
 function mySort($str)
@@ -134,7 +151,7 @@ function orderTheCode($arr)
         }
         if (strlen($a) == 5) {
             if (count(array_diff(str_split($correctCode[1]), str_split($a))) == 1
-            and count(array_diff(str_split($correctCode[4]), str_split($a))) == 2) $correctCode[5] = $a;
+            and count(array_diff(str_split($correctCode[4]), str_split($a))) == 1) $correctCode[5] = $a;
             if (count(array_diff(str_split($correctCode[4]), str_split($a))) == 2) $correctCode[2] = $a;
             if (count(array_diff(str_split($correctCode[1]), str_split($a))) == 0) $correctCode[3] = $a;
         }
@@ -144,7 +161,6 @@ function orderTheCode($arr)
     return $correctCode;
 }
 
-var_dump(orderTheCode(['cagedb', 'ab', 'gcdfa', 'fbcad', 'eafb', 'cdfbe', 'cdfgeb', 'dab', 'acedgfb', 'cefabd']));
 
 // $start = (float) array_sum(explode(' ', microtime()));
 
@@ -154,9 +170,9 @@ var_dump(orderTheCode(['cagedb', 'ab', 'gcdfa', 'fbcad', 'eafb', 'cdfbe', 'cdfge
 // echo PHP_EOL . "Test One COMPLETED in:" . sprintf("%.4f", ($end - $start)) . " seconds." . PHP_EOL;
 
 
-// $start = (float) array_sum(explode(' ', microtime()));
+$start = (float) array_sum(explode(' ', microtime()));
 
-// echo myTestTwo();
+echo myTestTwo();
 
-// $end = (float) array_sum(explode(' ', microtime()));
-// echo PHP_EOL . "Test Two COMPLETED in:" . sprintf("%.4f", ($end - $start)) . " seconds.";
+$end = (float) array_sum(explode(' ', microtime()));
+echo PHP_EOL . "Test Two COMPLETED in:" . sprintf("%.4f", ($end - $start)) . " seconds.";
