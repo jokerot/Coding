@@ -26,15 +26,12 @@ function lcm($x, $y){
 function myTestTwo()
 {
     $buses = readMyFile("text2.text");
-    file_put_contents("buses3.json", json_encode($buses));
-
 
     $offset = 0;
     $step = $buses[0];
     $time = 0;
 
     foreach($buses as $lateBy => $bus) {
-        // if ($lateBy=0) continue;
         $matchCount = 0;
         $time = $step;
         while ($matchCount < 1) {
@@ -44,7 +41,6 @@ function myTestTwo()
                     $matchCount = 1;
                     $offset = $offset + $time;
                     $step = lcm($bus, $step);
-                    echo "step= " . $step . "     offset= " . $offset . PHP_EOL;
             }
             $time += $step;
         }
