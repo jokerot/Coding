@@ -47,7 +47,7 @@ all_paths2 = []
 def walk_the_cave2(current_path, current_cave, small_done):
     if current_cave.upper() != current_cave and current_cave != "start" and current_cave in current_path:
         small_done = True 
-        
+
     current_path.append(current_cave)
 
     if current_cave == "end":
@@ -55,9 +55,7 @@ def walk_the_cave2(current_path, current_cave, small_done):
         return
 
     for i in caves[current_cave]:
-        if (i not in current_path or i.upper() == i) and i != "start"  :
-            walk_the_cave2(current_path.copy(), i, small_done)
-        elif not small_done and i != "start" and i.upper() != i: 
+        if (i not in current_path or i.upper() == i or not small_done ) and i != "start"  :
             walk_the_cave2(current_path.copy(), i, small_done)
         else:
             continue    
