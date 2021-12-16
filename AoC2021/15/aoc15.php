@@ -194,38 +194,39 @@ function myTestTwo()
     while ($corrected) {
         $corrected = false;
         for ($i = 0; $i < count($big_matrix[0]); $i++) {
+            for ($j = 1; $j <= $i; $j++) {
+                stomp($i, $i - $j);
+                stomp($i - $j, $i);
+            }
+            stomp($i, $i);
+        }
+        $length = count($big_matrix[0]) - 1;
+        for ($i = $length; $i > 0; $i--) {
+            for ($j = $length; $j > 0; $j--) {
+                stomp($i, $j);
+            }
+        }
+        for ($i = 0; $i < $length; $i++) {
+            for ($j = 0; $j < $length; $j++) {
+                stomp($i, $j);
+            }
+        }
+        for ($i = $length; $i > 0; $i--) {
+            for ($j = $length; $j > 0; $j--) {
+                stomp($j, $i);
+            }
+        }
+        for ($i = 0; $i < $length; $i++) {
+            for ($j = 0; $j < $length; $j++) {
+                stomp($j, $i);
+            }
+        }
+        for ($i = 0; $i < count($big_matrix[0]); $i++) {
             for ($j = 0; $j <= $i; $j++) {
                 stomp($i, $j);
                 stomp($j, $i);
             }
         }
-        // $length = count($big_matrix[0]) - 1;
-        // for ($i = $length; $i > 0; $i--) {
-        //     for ($j = $length; $j > 0; $j--) {
-        //         stomp($i, $j);
-        //     }
-        // }
-        // for ($i = 0; $i < $length; $i++) {
-        //     for ($j = 0; $j < $length; $j++) {
-        //         stomp($i, $j);
-        //     }
-        // }
-        // for ($i = $length; $i > 0; $i--) {
-        //     for ($j = $length; $j > 0; $j--) {
-        //         stomp($j, $i);
-        //     }
-        // }
-        // for ($i = 0; $i < $length; $i++) {
-        //     for ($j = 0; $j < $length; $j++) {
-        //         stomp($j, $i);
-        //     }
-        // }
-        // for ($i = 0; $i < count($big_matrix[0]); $i++) {
-        //     for ($j = 0; $j <= $i; $j++) {
-        //         stomp($i, $j);
-        //         stomp($j, $i);
-        //     }
-        // }
         echo "iterating..." . PHP_EOL;
         echo $big_matrix_calculated[count($big_matrix_calculated[0]) - 1][count($big_matrix_calculated) - 1] . PHP_EOL;
     }
